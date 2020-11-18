@@ -1,0 +1,12 @@
+#test finding a small path
+
+created graph graph
+
+added node A to graph
+added node B to graph
+
+added edge 1.000 from A to B in graph
+
+path from A to B:
+A to B with weight 1.000
+total cost: 1.000

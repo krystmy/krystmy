@@ -1,0 +1,19 @@
+#test finding a big least cost path
+
+CreateGraph graph
+
+AddNode graph A
+AddNode graph B
+AddNode graph C
+AddNode graph D
+AddNode graph E
+
+AddEdge graph A B 1.0
+AddEdge graph A E 10.0
+AddEdge graph B C 2.0
+AddEdge graph B D 3.0
+AddEdge graph B E 8.0
+AddEdge graph C D 7.0
+AddEdge graph D E 4.0
+
+FindPath graph A E

@@ -1,0 +1,11 @@
+# Test adding two node to a graph
+
+# Create a graph
+created graph graph1
+
+# Add two nodes
+added node n1 to graph1
+added node n2 to graph1
+
+# Prints out nodes in graph
+graph1 contains: n1 n2

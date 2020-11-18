@@ -1,0 +1,11 @@
+# Test adding two node to a graph
+
+# Create a graph
+CreateGraph graph1
+
+# Add two nodes
+AddNode graph1 n1
+AddNode graph1 n2
+
+# Prints out nodes in graph
+ListNodes graph1

@@ -1,0 +1,21 @@
+# Test printing out multiple children of a node
+
+# Create a graph
+CreateGraph graph1
+
+# Add some nodes
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+AddNode graph1 n4
+AddNode graph1 n5
+
+# Add an edge
+AddEdge graph1 n1 n2 e1
+AddEdge graph1 n1 n3 e2
+AddEdge graph1 n1 n4 e3
+AddEdge graph1 n1 n5 e4
+
+# Print the nodes in the graph and the children of n1
+ListNodes graph1
+ListChildren graph1 n1

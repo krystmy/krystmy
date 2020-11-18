@@ -1,0 +1,75 @@
+stages:
+  - build
+  - validation
+
+setup-build:
+  stage: build
+  script: source /cse/courses/cse331/19su/gitlab-ci/setup-build.sh
+  only: ["hw3-final"]
+  except: ["branches"]
+
+setup-validation:
+  stage: validation
+  script: source /cse/courses/cse331/19su/gitlab-ci/setup-validate.sh
+  only: ["hw3-final"]
+  except: ["branches"]
+
+poly-build:
+  stage: build
+  script: source /cse/courses/cse331/19su/gitlab-ci/poly-build.sh
+  only: ["hw4-final"]
+  except: ["branches"]
+
+poly-validation:
+  stage: validation
+  script: source /cse/courses/cse331/19su/gitlab-ci/poly-validate.sh
+  only: ["hw4-final"]
+  except: ["branches"]
+
+graph-part1-build:
+  stage: build
+  script: source /cse/courses/cse331/19su/gitlab-ci/graph-part1-build.sh
+  only: ["hw5-part1-final"]
+  except: ["branches"]
+
+graph-part1-validation:
+  stage: validation
+  script: source /cse/courses/cse331/19su/gitlab-ci/graph-part1-validate.sh
+  only: ["hw5-part1-final"]
+  except: ["branches"]
+
+graph-part2-build:
+  stage: build
+  script: source /cse/courses/cse331/19su/gitlab-ci/graph-part2-build.sh
+  only: ["hw5-part2-final"]
+  except: ["branches"]
+
+graph-part2-validation:
+  stage: validation
+  script: source /cse/courses/cse331/19su/gitlab-ci/graph-part2-validate.sh
+  only: ["hw5-part2-final"]
+  except: ["branches"]
+
+marvel-build:
+  stage: build
+  script: source /cse/courses/cse331/19su/gitlab-ci/marvel-build.sh
+  only: ["hw6-final"]
+  except: ["branches"]
+
+marvel-validation:
+  stage: validation
+  script: source /cse/courses/cse331/19su/gitlab-ci/marvel-validate.sh
+  only: ["hw6-final"]
+  except: ["branches"]
+
+pathfinder-build:
+  stage: build
+  script: source /cse/courses/cse331/19su/gitlab-ci/pathfinder-build.sh
+  only: ["hw7-final"]
+  except: ["branches"]
+
+pathfinder-validation:
+  stage: validation
+  script: source /cse/courses/cse331/19su/gitlab-ci/pathfinder-validate.sh
+  only: ["hw7-final"]
+  except: ["branches"]

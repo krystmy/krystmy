@@ -1,0 +1,19 @@
+task copyGraphTestScripts(type: Copy) {
+  from "src/test/java/graph/specTest"
+  include "*.test", "*.expected"
+  into "${buildDir}/classes/java/test/graph/specTest"
+}
+
+test.dependsOn copyGraphTestScripts
+
+task validatePart1 {
+  group "homework"
+  dependsOn clean
+  dependsOn compileJava
+  dependsOn compileTestJava
+  dependsOn javadoc
+}
+
+dependencies {
+  testImplementation project(':utils')
+}

@@ -1,0 +1,10 @@
+#test finding path of nonexisting nodes
+
+created graph graph
+
+added node A to graph
+
+unknown node B
+
+unknown node B
+unknown node C

@@ -1,0 +1,19 @@
+CSE 331 Homework - "Setup"
+Edit this file to supply your answers.
+
+Name:  Krystal Vo
+
+Problem 6.
+
+(a)
+Fibonacci failed because it threw an exception when n = 0, but n is not a non negative number,
+so in the if statement, the test I used for it is n < 0 instead of n <= 0.
+
+(b)
+Fibonacci failed because in the second if comparision, it saids n <= 2. But since its 0 indexed,
+the first two terms is at 0 and 1, so I fixed it to n <= 1.
+
+(c)
+Fibonacci failed because the function returned the difference instead of the sum of the numbers,
+so I replaced the - with a + in the return statement
+

@@ -1,0 +1,23 @@
+# Test adding multiple nodes nad edges to make a graph
+
+# Create a graph
+CreateGraph graph1
+
+# Add some nodes
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+AddNode graph1 n4
+
+# Add an edge
+AddEdge graph1 n1 n2 e1
+AddEdge graph1 n1 n3 e2
+AddEdge graph1 n3 n4 e3
+AddEdge graph1 n4 n1 e4
+
+# Print the nodes in the graph and the outgoing edges from n1 n2 n3 n4
+ListNodes graph1
+ListChildren graph1 n1
+ListChildren graph1 n2
+ListChildren graph1 n3
+ListChildren graph1 n4

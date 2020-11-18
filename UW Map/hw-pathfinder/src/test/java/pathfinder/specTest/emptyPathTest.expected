@@ -1,0 +1,8 @@
+#test finding a path to itself
+
+created graph graph
+
+added node A to graph
+
+path from A to A:
+total cost: 0.000

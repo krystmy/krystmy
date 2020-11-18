@@ -1,0 +1,9 @@
+#test finding path of nonexisting nodes
+
+CreateGraph graph
+
+AddNode graph A
+
+FindPath graph A B
+
+FindPath graph B C

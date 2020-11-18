@@ -1,0 +1,20 @@
+task copyPathfinderTestScripts(type: Copy) {
+  from "src/test/java/pathfinder/specTest"
+  include "*.test", "*.expected"
+  into "${buildDir}/classes/java/test/pathfinder/specTest"
+}
+
+test.dependsOn copyPathfinderTestScripts
+
+task runPathfinder(type: JavaExec) {
+  group = "homework"
+  main = "pathfinder/textInterface/Pathfinder"
+  standardInput = System.in
+  classpath = sourceSets.main.runtimeClasspath
+}
+
+dependencies {
+  implementation 'com.opencsv:opencsv:4.3.2'
+  implementation project(':hw-graph')
+  implementation project(':hw-marvel')
+}

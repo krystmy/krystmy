@@ -1,0 +1,9 @@
+task runHolaWorld(type: JavaExec) {
+  main = "setup/HolaWorld"
+  classpath = sourceSets.main.runtimeClasspath
+}
+
+task runRandomHello(type: JavaExec) {
+  main = "setup/RandomHello"
+  classpath = sourceSets.main.runtimeClasspath
+}

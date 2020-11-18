@@ -1,0 +1,10 @@
+#test finding non existing path
+
+CreateGraph graph
+
+AddNode graph A
+AddNode graph B
+
+AddEdge graph A B 1.0
+
+FindPath graph B A
